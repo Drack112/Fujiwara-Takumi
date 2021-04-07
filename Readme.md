@@ -36,4 +36,4 @@
 ```
 
 3. Retorne para a pasta com o arquivo `Gemfile`
-4. Rode `bundle install` no terminal
+4. Execute `bundle install` no terminal
