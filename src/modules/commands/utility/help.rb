@@ -21,7 +21,7 @@ module Bot::Commands
                 **about**  -->  Minhas informações.
                 **avatar** --> Gerar o avatar do usuário.
                 **cat**    --> Gatinhos!
-                **dot**    --> Woof!
+                **dog**    --> Woof!
                 **emoji**  --> Roubar emojis dos servidores.
                 **faces**  --> ╲(｡◕‿◕｡)╱
                 **github** --> Meu repositório Git.
