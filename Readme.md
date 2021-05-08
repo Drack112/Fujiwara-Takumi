@@ -2,17 +2,25 @@
 
 ## Lista de comandos
 
-* Info
-  * `about`  -->  Minhas informações.
-  * `avatar` --> Gerar o avatar do usuário.
-  * `github` --> Meu repositório Git.
-  * `help`   --> O comando que você deu agora.
-  * `invite` --> Link do meu convite.
-  * `ping`   --> Pong!
+- Utilidades
 
-* Imagens
-  * `avatar` - Olha sua foto :)
+  - `about` --> Minhas informações.
+  - `github` --> Meu repositório Git.
+  - `help` --> O comando que você deu agora.
+  - `invite` --> Link do meu convite.
+  - `ping` --> Pong!
 
+- Diversão
+
+  - `avatar` --> Olha a sua foto :camera:
+  - `cat` --> gatenhos :cat:
+  - `dog` --> Woof! :dog:
+  - `emoji` --> Roubar emojis
+  - `faces` --> ╲(｡◕‿◕｡)╱
+
+- Moderação
+
+  - `prune` --> Apagar mensagens.
 
 ## [Me convide pro seu servidor!](https://discord.com/api/oauth2/authorize?client_id=741030476780929109&permissions=8&scope=bot)
 
@@ -20,18 +28,17 @@
 
 ### Requerimentos
 
-* Ruby 3.0.0 ou uma versão superior
+- Ruby 3.0.0 ou uma versão superior
 
 ### Instalação e subindo o Bot
 
 1. Clone o repositório
-2. Crie uma pasta chamada `data` e dentro crie um arquivo `config.json` com o seguinte conteúdo: 
-
+2. Crie uma pasta chamada `data` e dentro crie um arquivo `config.json` com o seguinte conteúdo:
 
 ```json
 {
-    "prefix": "prefixo",
-    "token": "token do seu bot"
+  "prefix": "prefixo",
+  "token": "token do seu bot"
 }
 ```
 

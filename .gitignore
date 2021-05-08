@@ -1,3 +1,2 @@
-data/config.json
-
-Gemfile.lock
+data/
+node_modules/

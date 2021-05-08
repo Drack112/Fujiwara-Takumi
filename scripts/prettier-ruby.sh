@@ -1,0 +1,1 @@
+bundle exec rbprettier --ruby-single-quote false --write '**/*.rb'

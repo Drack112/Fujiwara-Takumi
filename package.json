@@ -1,0 +1,16 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "figlet": "^1.5.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "prettier-plugin-sh": "^0.6.1"
+  },
+  "scripts": {
+    "prettier-verify": "yarn prettier --write ./scripts/verify.sh"
+  }
+}

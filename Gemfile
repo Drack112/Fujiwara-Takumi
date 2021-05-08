@@ -1,6 +1,10 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'discordrb'
-gem 'json'
-gem 'ostruct'
-gem 'colorize'
+gem "discordrb"
+gem "json"
+gem "ostruct"
+gem "rest-client"
+gem "nokogiri"
+gem "prettier"
+gem "rake"
+gem 'rubocop'

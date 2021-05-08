@@ -1,26 +1,24 @@
-require 'discordrb'
-require 'ostruct'
-require 'json'
+require "discordrb"
+require "ostruct"
+require "json"
 
 module Bot
+  Dir["src/modules/*.rb"].each { |mod| load mod }
+  CONFIG = OpenStruct.new(JSON.parse(File.open("data/config.json").read))
 
-  Dir['src/modules/*.rb'].each { |mod| load mod }
-  CONFIG = OpenStruct.new(JSON.parse(File.open('data/config.json').read))
-
-  BOT = Discordrb::Commands::CommandBot.new token: CONFIG.token, prefix: CONFIG.prefix
+  BOT =
+    Discordrb::Commands::CommandBot.new token: CONFIG.token,
+                                        prefix: CONFIG.prefix
 
   def self.load_modules(cls, path)
     new_module = Module.new
     const_set(cls.to_sym, new_module)
     Dir["src/modules/#{path}/*.rb"].each { |file| load file }
-    new_module.constants.each do |mod|
-      BOT.include! new_module.const_get(mod)
-    end
+    new_module.constants.each { |mod| BOT.include! new_module.const_get(mod) }
   end
 
-  load_modules(:Events, 'events')
-  load_modules(:Commands, 'commands')
+  load_modules(:Events, "events")
+  load_modules(:Commands, "./*/*")
 
-BOT.run
-
+  BOT.run
 end
