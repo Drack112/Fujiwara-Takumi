@@ -1,4 +1,4 @@
-task default: [:verify, :node, :prettier, :run]
+task default: [:verify, :node, :prettier]
 
 task :verify do
   sh "sh scripts/verify.sh"
@@ -13,8 +13,4 @@ end
 task :prettier do
   sh "sh scripts/prettier-ruby.sh"
   puts "Arquivos formatados"
-end
-
-task :run do
-  sh "ruby run.rb"
 end
