@@ -7,4 +7,3 @@ gem "rest-client"
 gem "nokogiri"
 gem "prettier"
 gem "rake"
-gem 'rubocop'
