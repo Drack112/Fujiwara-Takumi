@@ -33,14 +33,12 @@
 ### Instalação e subindo o Bot
 
 1. Clone o repositório
-2. Crie uma pasta chamada `data` e dentro crie um arquivo `config.json` com o seguinte conteúdo:
+2. Crie um arquivo `.env` na raiz do projeto com o seguinte conteúdo:
 
-```json
-{
-  "prefix": "prefixo",
-  "token": "token do seu bot"
-}
+```.env
+TOKEN=token_do_seu_bot
 ```
 
 3. Retorne para a pasta com o arquivo `Gemfile`
 4. Execute `bundle install` no terminal
+5. Execute `npm install`no terminal

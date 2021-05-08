@@ -1,13 +1,16 @@
 require "discordrb"
 require "ostruct"
 require "json"
+require "dotenv"
 
 module Bot
   Dir["src/modules/*.rb"].each { |mod| load mod }
   CONFIG = OpenStruct.new(JSON.parse(File.open("data/config.json").read))
+  Dotenv.load("./.env")
+  Dotenv.require_keys("TOKEN")
 
   BOT =
-    Discordrb::Commands::CommandBot.new token: CONFIG.token,
+    Discordrb::Commands::CommandBot.new token: ENV["TOKEN"],
                                         prefix: CONFIG.prefix
 
   def self.load_modules(cls, path)
